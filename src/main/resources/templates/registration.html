@@ -101,15 +101,15 @@
 						th:classappend="${#fields.hasErrors('terms')}? 'has-error':''">
 						<input id="terms" type="checkbox" th:field="*{terms}" />   <label
 							class="control-label" for="terms">Sunt deacord cu <a
-							href="#">termeni si conditii</a>pentru inregistrare.
+							href="#">termeni si conditii</a> pentru inregistrare.
 						</label>
 						<p class="error-message"
 							th:each="error : ${#fields.errors('terms')}" th:text="${error}">Eroare Validare</p>
 					</div>
 					<div class="form-group">
 						<button type="submit" class="btn btn-success">Register</button>
-						<span>Already registered? <a href="/" th:href="@{/login}">Login
-								here</a></span>
+						<span>Aveti deja un cont? <a href="/" th:href="@{/login}">Logati-va
+								aici</a></span>
 					</div>
 
 				</form>
